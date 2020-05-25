@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bai tap 9</title>
+    </head>
+    <body>
+        <p id="text">Image</p>
+        <div>
+            <button id="jsstyle" onclick="RandomImage()">Click here to get random image</button>
+        </div>
+        <script type="text/javascript">
+            function RandomImage(){
+                var img=new Array();
+                img[1]="https://i.pinimg.com/originals/0e/3a/02/0e3a0209ebf915f34279ac867bd2ea26.jpg";
+                img[2]="https://duhocminhkhang.com/wp-content/uploads/2020/01/T%E1%BB%95ng-h%E1%BB%A3p-h%C3%ACnh-%E1%BA%A3nh-g%C3%A1i-xinh-%C4%91eo-m%E1%BA%AFt-k%C3%ADnh-c%E1%BB%B1c-cute-10-1.jpg";
+                img[3]="https://1.bp.blogspot.com/-a6piZ07ltpQ/XnBog-pS1fI/AAAAAAAAYkw/JHPYsaexldU92dRrrmTVA2DmfLbiZOPngCLcBGAsYHQ/s1600/Nguoi%2Bmau%2Bnhat-dep%2B%25283%2529.jpg";
+                var imgl = Math.floor(Math.random()*img.length);
+                if(imgl==0){
+                    imgl=1;
+                }
+                document.write('<img class="who" src="'+img[imgl]+'" style="width: 500px">');
+            }
+        </script>
+    </body>
+</html>

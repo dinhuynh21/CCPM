@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = utf-8 />
+		<title>Bài 6</title>
+		<script>
+		function changeValue(){
+			document.getElementById('hello').innerHTML = 'Row In Table';
+			document.getElementById('hello2').innerHTML = 'Row In Table';
+			document.getElementById('hello3').innerHTML = 'Row In Table';
+			document.getElementById('hello4').innerHTML = 'Row In Table';
+		}
+		</script>
+		
+		
+	</head>
+	<body>
+<table id="sampleTable" border = "3">
+<tr>
+	<td><p id="hello2">Row1 Cell2</p></td>
+	<td><p id="hello">Row1 Cell2</p></td>
+</tr>
+<tr>
+	<td><p id="hello3">Row1 Cell2</p></td>
+	<td><p id="hello4">Row1 Cell2</p></td>
+</tr>
+
+
+</table> <br>
+<input type="button" onclick="changeValue()" value="Thay đổi nội dung"> </input>
+
+	</body>
+</html>

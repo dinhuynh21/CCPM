@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = utf-8 />
+		<title>Bài 5</title>
+		<script>
+		function insert_row()
+        {
+            document.getElementById("sampleTable").insertRow(-1).innerHTML = '<td>New1</td><td>New2</td>';
+        }
+		</script>
+		
+		
+	</head>
+	<body>
+<table id="sampleTable" border = "3">
+<tr>
+	<td>Row1 Cell1</td>
+	<td>Row1 Cell2 </td>
+</tr>
+<tr>
+	<td>Row2 Cell1</td>
+	<td>Row2 Cell2</td>
+</tr>
+
+<tr>
+	<td>Row3 Cell1</td>
+	<td>Row3 Cell2</td>
+</tr>
+
+
+</table> <br>
+<input type="button" onclick="insert_row()" value="Insert Row"> </input>
+
+	</body>
+</html>

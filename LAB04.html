@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = utf-8 />
+		<title>Bài 4</title>
+		<script>
+		function getAttributes()
+			{
+			 var u = document.getElementById("somelink").href;
+			 var v = document.getElementById("somelink").hreflang;   
+		 	 var w = document.getElementById("somelink").rel; 
+		 	 var x = document.getElementById("somelink").target; 
+			 alert('Giá trị href : '+u+'\nGiá trị hreflang : '+v+'\nGiá trị rel : '+w+'\nGiá trị Target : '+x);
+			
+	
+			}
+		</script>
+	</head>
+	<body>
+<p>
+	<a id="somelink" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.google.com/">
+	Google Website</a>
+</p>
+<button onclick="getAttributes()" >Xem thuộc tính trang web
+</button>
+	</body>
+</html>

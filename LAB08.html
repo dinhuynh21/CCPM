@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = utf-8 />
+		<title>Bài 8</title>
+		
+		<script>
+		function removeColor(){
+			var delColor = document.getElementById("colorSelect");
+			delColor.remove(delColor.selectedIndex);
+		}
+		</script>
+	
+	</head>
+	<body>
+
+	<form>
+	<select id="colorSelect">
+	<option id = "color1">Color 1</option>
+	<option id = "color2">Color 2</option>
+	<option id = "color3">Color 3</option>
+	<option id = "color4">Color 4</option>
+	</select>
+	
+	
+	<input type="button" onclick="removeColor()" value="Select and Remove"<br>
+	</form>
+	
+	</body>
+</html>
